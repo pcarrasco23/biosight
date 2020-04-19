@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://getbootstrap.com/docs/4.4/assets/css/docs.min.css" rel="stylesheet"/>
+        <style>
+            .bd-navbar {
+                background-color:cornflowerblue;
+            }
+
+            .bd-navbar .navbar-nav .nav-link {
+                color: rgba(255,255,255,.5);
+            }
+
+            .biosight_container {
+                margin: 20px 50px;
+            }
+
+            .query_section {
+                float: left;
+                width: 800px;
+                padding: 1rem;
+            }
+
+            .query_section form {
+                width: 100%;
+            }
+
+            .results_section {
+                float:left;
+                background-color: #f8f9fa;
+                height: 700px;
+                width: 700px;
+                padding: 10px;
+            }
+
+            button.action {
+                display:block;
+                margin-top:10px;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+            <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+                PLACE LOGO HERE
+            </a>
+            
+            <div class="navbar-nav-scroll">
+                <ul class="navbar-nav bd-navbar-nav flex-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">How to use</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Methodology</a>
+                </li>
+                </ul>
+            </div>
+            
+            <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        v1.0
+                    </a>
+                </li>
+            </ul>
+            
+            <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">Feedback</a>
+        </header>
+        <div class="biosight_container">
+            <div class="query_section">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="row">
+                            <form>
+                                <div class="form-group">
+                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Natural Language query">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Concepts</button>
+                                <button type="submit" class="btn btn-primary">Entities</button>
+                                <button type="submit" class="btn btn-primary">Keywords</button>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <p>List of popular searches</p>
+                            <ul>
+                                <li>Considerations for COVID-19 vaccine construction</li>
+                                <li>Predicting COVID-19 epidemic risk</li>
+                                <li>Similarity of coronavirus genome sequence</li>
+                            </ul>
+                            <p>Works in news collection only</p>
+                            <ul>
+                                <li>COVID-19 PCR tests</li>
+                                <li>Development of COVID-19 attenuated virus vaccine</li>
+                                <li>Development of COVID-19 non-replicating viral vector vaccine</li>
+                            </ul>
+                            <p>
+                                Brief reminder for the boolean operations and their symbols<br/>
+                                More explanations as pop-up windows denoted by ?, i, or h symbol 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row>">
+                            <h4>COVID-19 Collections</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                News
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                BioXiv
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label" for="exampleRadios3">
+                                Dectections
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label" for="exampleRadios3">
+                                Treatments
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label" for="exampleRadios3">
+                                Vaccines
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row>">
+                            <button type="button" class="btn btn-primary action">Search</button>
+                            <button type="button" class="btn btn-primary action">Clear All</button>
+                            <button type="button" class="btn btn-primary action">Export</button>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="results_section">
+                &nbsp;
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </body>
+</html>
